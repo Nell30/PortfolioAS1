@@ -368,9 +368,13 @@ nav li:first-child a{
 }
 
 .skills-card {
- width: 310px;
+ width: 350px;
  height: 210px;
 }
+.skills-card p{
+    width: 350px;
+    max-height: 210px;
+   }
 
 .Illustrator-icon{
     max-height: 100px;
