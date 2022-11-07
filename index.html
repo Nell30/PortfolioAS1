@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/57baeee080.js" crossorigin="anonymous"></script>
+    <script src="/path/to/cdn/jquery.min.js"></script>
+    <script src="/path/to/dist/imghover.min.js"></script>
+    <script src="./script.js"></script>
     <title>Nelson Portfolio</title>
 </head>
 <body>
@@ -34,7 +37,14 @@
                 <p>am a Designer and Developer</p>
 
                 <div>
-                    <a class="hire-button" href="#contact">Hire me</a>
+                    <!--<a class="hire-button" href="#contact">Hire me</a> -->
+                    <a href="#contact" class="cta">
+                        <span>Hire me</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </a>
                 </div>
             </div>
             <div class="home-img"></div>
@@ -98,7 +108,17 @@
                         <button>Visit</button>
                     </div>
                 </div>
-            <div class="first-proj-img-div"><img src="./images/Mobileapp.png" class="first-proj-img"  alt=""></div>
+            <div class="first-proj-img-div" >
+               <!--<img src="./images/Mobileapp.png" class="first-proj-img"  alt="" id=""> --> 
+                <a href="#" class="photo">
+                
+                    <img src="./images/Mobileapp.png" />
+                  <div class="glow-wrap">
+                    <i class="glow"></i>
+                  </div>
+                </a>
+            </div>
+            
         </div>
 
          <div class="first-project">
@@ -112,7 +132,16 @@
                         <button>Visit</button>
                     </div>
                 </div>
-            <div class="first-proj-img-div"><img src="./images/proj_1.webp" class="first-proj-img"  alt=""></div>
+            <div class="first-proj-img-div">
+               <!-- <img src="./images/proj_1.webp" class="first-proj-img"  alt=""> --> 
+                <a href="#" class="photo">
+                
+                    <img src="./images/proj_1.webp" />
+                  <div class="glow-wrap">
+                    <i class="glow"></i>
+                  </div>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -128,5 +157,8 @@
         </div>
     </div>
 </main>
+
+
+        
 </body>
 </html>
